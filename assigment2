@@ -1,2 +1,10 @@
-yazılacak kodlar
-yarın yapacagım
+age = str(input("are u cigarette addict older than 75 years old?:")).title().strip()
+chronic = str(input("do u have a severe chronic disease?:")).title().strip()
+immune = str(input("ıs your immune system too weak?:")).title().strip()
+print(age,chronic,immune)
+risk= age or chronic or immune
+risk                      
+if risk == "Yes":
+    print("you are in risky group")
+else :
+    print("you are not in the risky group")
