@@ -1,1 +1,16 @@
-bunuda remotta olusruduk.
+#Armstrong number
+n=str(input("enter Armstrong number"))
+i=len(n)
+sayac=i
+sonuc=0
+numbers=list(n)
+
+while sayac>0:
+    a=int(numbers[sayac-1])**i
+    sonuc+=a
+    sayac-=1
+print(sonuc)
+if sonuc==int(n):
+    print( "{} is an Armstrong number".format(n))
+else :
+    print( "{} is not an Armstrong number".format(n))
