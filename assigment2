@@ -1,10 +1,8 @@
-age = str(input("are u cigarette addict older than 75 years old?:")).title().strip()
-chronic = str(input("do u have a severe chronic disease?:")).title().strip()
-immune = str(input("ıs your immune system too weak?:")).title().strip()
-print(age,chronic,immune)
-risk= age or chronic or immune
-risk                      
-if risk == "Yes":
-    print("you are in risky group")
+age = input("Are you cigaratte addict older than 75 years old? (Yes/No) ").title().strip() == "Yes"
+chronic = input("Do you have a severe chronic disease? : (Yes/No) ").title().strip() == "Yes"
+immune = input("Is your immune system too weak? : (Yes/No) ").title().strip() == "Yes"
+print("age answer:", age, "\nchronic answer:", chronic, "\nimmune answer:", immune)
+if age or chronic or immune :
+    print("You are in the risky group")
 else :
-    print("you are not in the risky group")
+    print("You are not in the risky group")
