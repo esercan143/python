@@ -1,0 +1,10 @@
+#asal sayı bulma
+a=int(input("enter a number to check prime numbe ror not :"))
+böl=[2,3,5,7]
+if a in böl:
+    print("{} is a prime number".format(a))
+elif a%2!=0 and a%3!=0 and a%5!=0 and a%7!=0:
+    print("{} is a prime number".format(a))
+else :
+    print("{} is not a prime number".format(a))
+
